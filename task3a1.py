@@ -46,7 +46,7 @@ colors = ['blue', 'green', 'purple', 'orange', 'black', 'magenta', 'gray', 'yell
 for sp, color in zip(species, colors):
     y_data = f.X[gas.species_index(sp)]
 
-    if sp in ['OH', 'H', 'H2', 'CO']:
+    if sp in ['OH', 'H', 'H2']:
         y_data = 10 * y_data
         label = f"10×{sp}"
     else:
